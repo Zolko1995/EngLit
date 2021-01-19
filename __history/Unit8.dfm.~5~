@@ -1,0 +1,62 @@
+object Form8: TForm8
+  Left = 0
+  Top = 0
+  Caption = 'Topics'
+  ClientHeight = 385
+  ClientWidth = 447
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Memo1: TMemo
+    Left = 8
+    Top = 8
+    Width = 431
+    Height = 323
+    Lines.Strings = (
+      
+        'Ez az Alkalmaz'#225's arra szolg'#225'l , hogy az Angol nyelvtan '#233's mondat' +
+        'szerkezetek '
+      'fel'#233'pit'#233's'#233't szab'#225'lyszer'#369's'#233'geit tan'#237'tsa meg a di'#225'kkal.'
+      'Ez  folyamat egy k'#233'rd'#233's v'#225'lasz r'#233'sszel lesz megvalositva ')
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 8
+    Top = 352
+    Width = 75
+    Height = 25
+    Caption = 'Exit'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 120
+    Top = 352
+    Width = 75
+    Height = 25
+    Caption = 'Shakespeare'
+    TabOrder = 2
+  end
+  object Button3: TButton
+    Left = 225
+    Top = 352
+    Width = 75
+    Height = 25
+    Caption = 'Wilde'
+    TabOrder = 3
+  end
+  object Button4: TButton
+    Left = 338
+    Top = 352
+    Width = 75
+    Height = 25
+    Caption = 'Burgess'
+    TabOrder = 4
+  end
+end

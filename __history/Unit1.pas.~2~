@@ -1,0 +1,146 @@
+unit Unit1;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Data.Win.ADODB, Vcl.StdCtrls,
+  Vcl.Grids, Vcl.DBGrids, Vcl.Menus, System.ImageList, Vcl.ImgList,
+  Vcl.Imaging.jpeg, Vcl.ExtCtrls, Vcl.ComCtrls, System.UITypes;
+
+type
+  TfrmLogin = class(TForm)
+    btnLogin: TButton;
+    btnExit: TButton;
+    ADOConnection1LoginForm: TADOConnection;
+    edtPassword: TEdit;
+    edtUserName: TEdit;
+    lblUser: TLabel;
+    lblPassword: TLabel;
+    ADOTable1LoginForm: TADOTable;
+    ADOQuery1LoginForm: TADOQuery;
+    menuLogin: TMainMenu;
+    UsersMenu: TMenuItem;
+    AddNewUserMenu: TMenuItem;
+    ChangePasswordMenu: TMenuItem;
+    HelpMenu: TMenuItem;
+    ContactMenu: TMenuItem;
+    N1: TMenuItem;
+    ExitMenu: TMenuItem;
+    imglIcons: TImageList;
+    Kszt1: TMenuItem;
+    procedure btnExitClick(Sender: TObject);
+    procedure btnLoginClick(Sender: TObject);
+    procedure ExitMenuClick(Sender: TObject);
+    procedure ContactMenuClick(Sender: TObject);
+    procedure AddNewUserMenuClick(Sender: TObject);
+    procedure FormActivate(Sender: TObject);
+    procedure Kszt1Click(Sender: TObject);
+    procedure ChangePasswordMenuClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmLogin: TfrmLogin;
+
+implementation
+
+uses Unit2, Unit3, Unit4, Unit5, about, Unit7;
+
+var
+  Administrator: Boolean;
+
+{$R *.dfm}
+
+procedure TfrmLogin.AddNewUserMenuClick(Sender: TObject);
+begin
+  frmAddUser.Show;
+end;
+
+procedure TfrmLogin.ChangePasswordMenuClick(Sender: TObject);
+begin
+  frmGame.Show;
+end;
+
+procedure TfrmLogin.ContactMenuClick(Sender: TObject);
+begin
+  frmSendMail.Show;
+end;
+
+procedure TfrmLogin.btnExitClick(Sender: TObject);
+begin
+  Application.Terminate;
+end;
+
+procedure TfrmLogin.ExitMenuClick(Sender: TObject);
+begin
+  Close;
+end;
+
+procedure TfrmLogin.FormActivate(Sender: TObject);
+begin
+  edtUserName.SetFocus;
+  edtUserName.Text := '';
+  edtPassword.Text := '';
+  // HIBAKEZELÉS!!!
+  try
+    ADOTable1LoginForm.open;
+  except
+    on E: Exception do
+    begin
+      MessageDlg('We could not reach the User database!' +
+        E.ClassName, mtError, [mbOK], 0);
+    end;
+  end;
+end;
+
+procedure TfrmLogin.FormCreate(Sender: TObject);
+begin
+  DeleteMenu(GetSystemMenu(Handle, False), SC_MOVE, MF_BYCOMMAND);
+end;
+
+procedure TfrmLogin.Kszt1Click(Sender: TObject);
+begin
+  frmAbout.Show;
+end;
+
+procedure TfrmLogin.btnLoginClick(Sender: TObject);
+begin
+  ADOQuery1LoginForm.Close;
+  ADOQuery1LoginForm.SQL.Clear;
+  ADOQuery1LoginForm.SQL.Add('SELECT * FROM users WHERE UserName="' +
+    edtUserName.Text + '" and Password="' + edtPassword.Text + '"');
+  ADOQuery1LoginForm.Active := True;
+  Administrator := ADOQuery1LoginForm.FieldByName('Admin').AsBoolean;
+  if ADOQuery1LoginForm.Recordcount = 0 then
+    ShowMessage('We could not find the data!')
+  else
+  begin
+    if Administrator = True then
+    begin
+      MessageDlg('Logged in as Administrator!!!' + sLineBreak +
+        'The login was successful!' + sLineBreak + 'Welcome ' +
+        edtUserName.Text + '!', mtInformation, [mbOK], 0);
+      ADOQuery1LoginForm.Active := False;
+      frmMainMenu.lblUserRights.Caption := (edtUserName.Text);
+//       frmMainMenu.Edit1.Text := (edtUserName.Text);
+      frmMainMenu.ShowModal;
+    end
+    else
+    begin
+      ShowMessage('The login was successful!' + sLineBreak + 'Welcome ' +
+        edtUserName.Text + '!');
+      ADOQuery1LoginForm.Active := False;
+      frmMainMenu.lblUserRights.Caption := (edtUserName.Text);
+//       frmMainMenu.Edit1.Text := (edtUserName.Text);
+      frmMainMenu.ShowModal;
+    end;
+  end;
+end;
+
+end.

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2017/03/18 14:21:28.000.384,=C:\Users\Siket Zoltán\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2017/03/18 14:29:37.000.735,C:\Users\Siket Zoltán\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Programom\Unit1.pas</Transaction>
+    <Transaction>2017/03/18 14:29:37.000.735,C:\Users\Siket Zoltán\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Programom\Unit1.dfm</Transaction>
+    <Transaction>2017/03/18 14:43:44.000.163,C:\Users\Siket Zoltán\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Programom\Programom.dproj</Transaction>
+    <Transaction>2017/03/18 16:05:20.000.079,=C:\Programom\Unit2.pas</Transaction>
+    <Transaction>2017/03/18 16:22:45.000.117,=C:\Programom\Unit3.pas</Transaction>
+    <Transaction>2017/03/18 19:08:06.000.961,=C:\Programom\Unit4.pas</Transaction>
+    <Transaction>2017/03/19 15:23:57.000.362,=C:\Programom\ABOUT.pas</Transaction>
+    <Transaction>2017/03/19 15:26:15.000.686,C:\Programom\ABOUT.dfm=C:\Programom\about.dfm</Transaction>
+    <Transaction>2017/03/19 15:26:15.000.686,C:\Programom\ABOUT.pas=C:\Programom\about.pas</Transaction>
+    <Transaction>2017/03/19 16:05:04.000.524,=C:\Programom\Unit5.pas</Transaction>
+    <Transaction>2017/03/24 11:15:16.000.974,=C:\Programom\Unit6.pas</Transaction>
+    <Transaction>2017/03/24 22:28:05.000.697,=C:\Programom\Unit7.pas</Transaction>
+    <Transaction>2017/04/02 22:54:48.000.541,=C:\programom\Unit8.pas</Transaction>
+  </Transactions>
+</BorlandProject>

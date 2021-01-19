@@ -1,0 +1,314 @@
+object frmGame: TfrmGame
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'Game'
+  ClientHeight = 643
+  ClientWidth = 743
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Image2: TImage
+    Left = 8
+    Top = 41
+    Width = 721
+    Height = 345
+  end
+  object Label1: TLabel
+    Left = 40
+    Top = 64
+    Width = 46
+    Height = 19
+    Caption = 'Label1'
+    DragMode = dmAutomatic
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    OnDragOver = Label1DragOver
+  end
+  object Label2: TLabel
+    Left = 92
+    Top = 97
+    Width = 46
+    Height = 19
+    Caption = 'Label1'
+    DragMode = dmAutomatic
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    OnDragOver = Label2DragOver
+  end
+  object Label3: TLabel
+    Left = 140
+    Top = 64
+    Width = 46
+    Height = 19
+    Caption = 'Label1'
+    DragMode = dmAutomatic
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    OnDragOver = Label3DragOver
+  end
+  object Label4: TLabel
+    Left = 196
+    Top = 97
+    Width = 46
+    Height = 19
+    Caption = 'Label1'
+    DragMode = dmAutomatic
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    OnDragOver = Label4DragOver
+  end
+  object Label5: TLabel
+    Left = 252
+    Top = 64
+    Width = 46
+    Height = 19
+    Caption = 'Label1'
+    DragMode = dmAutomatic
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    OnDragOver = Label5DragOver
+  end
+  object Label6: TLabel
+    Left = 315
+    Top = 97
+    Width = 46
+    Height = 19
+    Caption = 'Label1'
+    DragMode = dmAutomatic
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    OnDragOver = Label6DragOver
+  end
+  object Label7: TLabel
+    Left = 374
+    Top = 64
+    Width = 46
+    Height = 19
+    Caption = 'Label1'
+    DragMode = dmAutomatic
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    OnDragOver = Label7DragOver
+  end
+  object Label8: TLabel
+    Left = 428
+    Top = 97
+    Width = 46
+    Height = 19
+    Caption = 'Label1'
+    DragMode = dmAutomatic
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    OnDragOver = Label8DragOver
+  end
+  object Label10: TLabel
+    Left = 484
+    Top = 64
+    Width = 46
+    Height = 19
+    Caption = 'Label1'
+    DragMode = dmAutomatic
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    OnDragOver = Label10DragOver
+  end
+  object Image1: TImage
+    Left = 8
+    Top = 447
+    Width = 721
+    Height = 145
+  end
+  object Label9: TLabel
+    Left = 324
+    Top = 480
+    Width = 60
+    Height = 25
+    Caption = 'Label9'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label11: TLabel
+    Left = 252
+    Top = 8
+    Width = 64
+    Height = 23
+    Caption = 'Label11'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -19
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label12: TLabel
+    Left = 324
+    Top = 512
+    Width = 71
+    Height = 25
+    Caption = 'Label12'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -21
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label13: TLabel
+    Left = 512
+    Top = 97
+    Width = 55
+    Height = 19
+    Caption = 'Label13'
+    DragMode = dmAutomatic
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    OnDragOver = Label13DragOver
+  end
+  object Label14: TLabel
+    Left = 627
+    Top = 97
+    Width = 55
+    Height = 19
+    Caption = 'Label13'
+    DragMode = dmAutomatic
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    OnDragOver = Label13DragOver
+  end
+  object Label15: TLabel
+    Left = 568
+    Top = 64
+    Width = 55
+    Height = 19
+    Caption = 'Label13'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Label16: TLabel
+    Left = 31
+    Top = 144
+    Width = 55
+    Height = 19
+    Caption = 'Label13'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -16
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Button1: TButton
+    Left = 40
+    Top = 408
+    Width = 75
+    Height = 25
+    Caption = 'Show'
+    TabOrder = 0
+    Visible = False
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 140
+    Top = 408
+    Width = 75
+    Height = 25
+    Caption = 'Quote 1'
+    TabOrder = 1
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Left = 252
+    Top = 408
+    Width = 75
+    Height = 25
+    Caption = 'Quote 2'
+    TabOrder = 2
+    OnClick = Button3Click
+  end
+  object Button4: TButton
+    Left = 374
+    Top = 408
+    Width = 75
+    Height = 25
+    Caption = 'Quote 3'
+    TabOrder = 3
+  end
+  object Button5: TButton
+    Left = 502
+    Top = 408
+    Width = 75
+    Height = 25
+    Caption = 'Quote 4'
+    TabOrder = 4
+  end
+  object Button6: TButton
+    Left = 324
+    Top = 610
+    Width = 75
+    Height = 25
+    Caption = 'Exit'
+    TabOrder = 5
+    OnClick = Button6Click
+  end
+end

@@ -1,0 +1,156 @@
+object frmGame: TfrmGame
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'J'#225't'#233'k'
+  ClientHeight = 643
+  ClientWidth = 743
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  Position = poDesktopCenter
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label2: TLabel
+    Left = 477
+    Top = 187
+    Width = 138
+    Height = 31
+    Caption = 'James Joyce'
+    DragMode = dmAutomatic
+    Font.Charset = EASTEUROPE_CHARSET
+    Font.Color = clGrayText
+    Font.Height = -27
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsItalic]
+    ParentFont = False
+    OnDragOver = Label2DragOver
+  end
+  object Label3: TLabel
+    Left = 450
+    Top = 384
+    Width = 163
+    Height = 31
+    Caption = 'Virginia Woolf'
+    DragMode = dmAutomatic
+    Font.Charset = EASTEUROPE_CHARSET
+    Font.Color = clNavy
+    Font.Height = -27
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsItalic]
+    ParentFont = False
+    OnDragOver = Label3DragOver
+  end
+  object Label1: TLabel
+    Left = 90
+    Top = 48
+    Width = 223
+    Height = 31
+    Caption = 'William Shakespear'
+    Color = clCream
+    DragMode = dmAutomatic
+    Font.Charset = EASTEUROPE_CHARSET
+    Font.Color = clHotLight
+    Font.Height = -27
+    Font.Name = 'Times New Roman'
+    Font.Style = [fsItalic]
+    ParentColor = False
+    ParentFont = False
+    OnDragOver = Label1DragOver
+  end
+  object Label4: TLabel
+    Left = 35
+    Top = 216
+    Width = 185
+    Height = 33
+    Caption = 'Charles Dickens'
+    DragMode = dmAutomatic
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clMedGray
+    Font.Height = -27
+    Font.Name = 'Tahoma'
+    Font.Style = [fsItalic]
+    ParentFont = False
+    OnDragOver = Label4DragOver
+  end
+  object Label5: TLabel
+    Left = 416
+    Top = 80
+    Width = 182
+    Height = 33
+    Caption = 'Samuel Beckett'
+    DragMode = dmAutomatic
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clRed
+    Font.Height = -27
+    Font.Name = 'Tahoma'
+    Font.Style = [fsItalic]
+    ParentFont = False
+    OnDragOver = Label5DragOver
+  end
+  object Label6: TLabel
+    Left = 306
+    Top = 264
+    Width = 186
+    Height = 33
+    Caption = 'Edgar Allen Poe'
+    DragMode = dmAutomatic
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clYellow
+    Font.Height = -27
+    Font.Name = 'Tahoma'
+    Font.Style = [fsItalic]
+    ParentFont = False
+    OnDragOver = Label6DragOver
+  end
+  object Label7: TLabel
+    Left = 173
+    Top = 328
+    Width = 140
+    Height = 33
+    Caption = 'Oscar Wilde'
+    DragMode = dmAutomatic
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clLime
+    Font.Height = -27
+    Font.Name = 'Tahoma'
+    Font.Style = [fsItalic]
+    ParentFont = False
+    OnDragOver = Label7DragOver
+  end
+  object Label8: TLabel
+    Left = 267
+    Top = 496
+    Width = 206
+    Height = 33
+    Caption = 'Geoffrey Chaucer'
+    DragMode = dmAutomatic
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clMaroon
+    Font.Height = -27
+    Font.Name = 'Tahoma'
+    Font.Style = [fsItalic]
+    ParentFont = False
+    OnDragOver = Label8DragOver
+  end
+  object Label10: TLabel
+    Left = 107
+    Top = 408
+    Width = 135
+    Height = 33
+    Caption = 'Ezra Bound'
+    DragMode = dmAutomatic
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -27
+    Font.Name = 'Tahoma'
+    Font.Style = [fsItalic]
+    ParentFont = False
+    OnDragOver = Label10DragOver
+  end
+end

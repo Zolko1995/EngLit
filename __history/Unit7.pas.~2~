@@ -1,0 +1,54 @@
+unit Unit7;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Imaging.pngimage,
+  Vcl.ExtCtrls;
+
+type
+  TfrmGame = class(TForm)
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    Label4: TLabel;
+    Label5: TLabel;
+    Label6: TLabel;
+    Label7: TLabel;
+    Label8: TLabel;
+    procedure FormCreate(Sender: TObject);
+    procedure Label1DragOver(Sender, Source: TObject; X, Y: Integer;
+      State: TDragState; var Accept: Boolean);
+
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmGame: TfrmGame;
+  MoveShape1: Boolean;
+  Pi: TPoint;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmGame.FormCreate(Sender: TObject);
+begin
+  DeleteMenu(GetSystemMenu(Handle, False), SC_MOVE, MF_BYCOMMAND);
+end;
+
+procedure TfrmGame.Label1DragOver(Sender, Source: TObject; X, Y: Integer;
+  State: TDragState; var Accept: Boolean);
+begin
+  Label1.Top := Label1.Top - Label1.Height div 2 + Y;
+  Label1.Left := Label1.Left - Label1.Width div 2 + X;
+end;
+
+
+
+end.
